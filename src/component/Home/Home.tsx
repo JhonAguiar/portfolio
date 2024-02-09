@@ -19,7 +19,7 @@ import ethos from '../../assets/images/ethos.jpg';
 import cientocincuenta from '../../assets/images/cientocincuenta.svg';
 import global from '../../assets/images/globalnews.png';
 
-import { LiaAngular , LiaCss3, LiaGit, LiaHtml5, LiaInstagram, LiaReact  } from "react-icons/lia";
+import { LiaAngular , LiaCss3, LiaGit, LiaHtml5,  LiaReact  } from "react-icons/lia";
 import { RiJavascriptLine } from "react-icons/ri";
 import { SiBootstrap, SiCsharp, SiGnometerminal, SiVisualstudio, SiW3C } from 'react-icons/si';
 import { FaCogs } from 'react-icons/fa';
