@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './Home.css';
 import { FaBars , FaX } from "react-icons/fa6";
 import { FcClapperboard   } from "react-icons/fc";
 import { ImGithub, ImInstagram, ImLinkedin } from "react-icons/im";
 import { Link } from 'react-scroll';
-
 import ProfilePhoto from '../assets/images/profile.jpg';
 import trk from '../assets/images/trk.svg';
 
