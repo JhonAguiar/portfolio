@@ -7,9 +7,10 @@ import Home from './routes/Home'
 
 const router = createHashRouter([
   {
-    path: '/',
+    path: '',
     element: <Home/>
-  }
+  },
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

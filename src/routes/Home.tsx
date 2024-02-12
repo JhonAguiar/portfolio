@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Home.css';
 import { FaBars , FaX } from "react-icons/fa6";
 import { FcClapperboard   } from "react-icons/fc";
 import { ImGithub, ImInstagram, ImLinkedin } from "react-icons/im";
+import { Link } from 'react-scroll';
 
 import ProfilePhoto from '../assets/images/profile.jpg';
 import trk from '../assets/images/trk.svg';
@@ -31,12 +32,19 @@ interface HomeState {
 }
 
 class Home extends React.Component<{}, HomeState> {
+
+    
+
+  
+
   constructor(props: {}) {
     super(props);
     this.state = {
       menuOpen: false
     };
   }
+
+
 
   handleClick = () => {
     this.setState({ menuOpen: !this.state.menuOpen });
@@ -55,10 +63,18 @@ class Home extends React.Component<{}, HomeState> {
           <div className={`menu-wrap ${this.state.menuOpen ? 'open' : ''}`}>
             <div className="menu">
               <div className="link-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><Link 
+                    to="home" 
+                    href="#home">Home</Link></li>
+                <li><Link 
+                    to="profile" 
+                    href="#profile">Profile</Link></li>
+                <li><Link 
+                    to="skills" 
+                    href="#skills">Skills</Link></li>
+                <li><Link 
+                    to="works" 
+                    href="#works">Works</Link></li>
               </div>
             </div>
           </div>
